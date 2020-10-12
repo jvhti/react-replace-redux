@@ -7,7 +7,6 @@ const configureStore = () => {
           p => p.id === productId
       );
       const newFavStatus = !curState.products[prodIndex].isFavorite;
-      console.log(prodIndex);
       const updatedProducts = [...curState.products];
       updatedProducts[prodIndex] = {
         ...curState.products[prodIndex],
